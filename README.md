@@ -1,0 +1,2 @@
+# traits
+Useful PHP traits.
