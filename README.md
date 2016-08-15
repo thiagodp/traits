@@ -1,2 +1,2 @@
-# traits
-Useful PHP traits.
+# phputil\traits
+Useful traits for PHP.

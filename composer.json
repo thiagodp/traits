@@ -1,0 +1,24 @@
+{
+	"name": "phputil/traits",
+	"type": "library",
+	"description": "Useful traits for PHP",
+	"keywords": [ "trait", "getter", "setter", "builder", "automatic" ],
+	"homepage": "http://github.com/thiagodp/traits",
+	"license": "LGPL-3",
+	"authors": [ { "name": "Thiago Delgado Pinto" } ],
+	"support": {
+		"issues": "https://github.com/thiagodp/traits/issues",
+		"source": "https://github.com/thiagodp/traits"
+	},
+	"require": {
+		"php": ">=5.4"
+	},
+	"require-dev": {
+        "phpunit/phpunit": "=4.4.2"
+    },	
+	"suggest": {
+	},
+	"autoload": {
+		"psr-4": { "phputil\\traits\\": "lib/" }
+	}
+}
