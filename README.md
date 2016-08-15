@@ -11,7 +11,7 @@ We use [semantic version](http://semver.org/). See [our releases](https://github
 composer require phputil/traits
 ```
 
-## Classes
+## Traits
 
 * [GetterBuilder](https://github.com/thiagodp/traits/blob/master/lib/GetterBuilder.php)
 * [WithBuilder](https://github.com/thiagodp/traits/blob/master/lib/WithBuilder.php)
