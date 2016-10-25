@@ -16,6 +16,8 @@ composer require phputil/traits
 * [GetterBuilder](https://github.com/thiagodp/traits/blob/master/lib/GetterBuilder.php)
 * [WithBuilder](https://github.com/thiagodp/traits/blob/master/lib/WithBuilder.php)
 * [GetterSetterWithBuilder](https://github.com/thiagodp/traits/blob/master/lib/GetterSetterWithBuilder.php)
+* [FromArray](https://github.com/thiagodp/traits/blob/master/lib/FromArray.php)
+* [ToArray](https://github.com/thiagodp/traits/blob/master/lib/ToArray.php)
 
 ## Examples
 
