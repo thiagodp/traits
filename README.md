@@ -73,3 +73,36 @@ echo $obj->getDescription(); // I am Bob
 $obj->setName( 'Bob Dylan' );
 echo $obj->getName(); // Bob Dylan
 ```
+
+Example on FromArray:
+
+```php
+class MyClass {
+
+	use FromArray;
+	
+	private $id;
+	protected $name;
+	public $age;
+}
+  
+$obj = new MyClass();
+$obj->fromArray( array( 'id' => 10, 'name' => 'Bob', 'age' => 18 ) );
+var_dump( $obj ); // the attributes will have the array values
+```
+
+Example on ToArray:
+
+```php
+class MyClass {
+
+	use ToArray;
+	
+	private $id = 50;
+	protected $name = 'Bob';
+	public $age = 21;
+}
+  
+$obj = new MyClass();
+var_dump( $obj->toArray() ); // array( 'id' => 50, 'name' => 'Bob', 'age' => 21 )
+```
