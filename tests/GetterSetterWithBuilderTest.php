@@ -25,6 +25,11 @@ class GetterSetterWithBuilderTest extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( 'Bob', $a->getName() );
 		$this->assertEquals( 'I am Bob', $a->getDescription() );
 	}
+	
+	function test_work_with_null_value_on_with() {
+		$a = ( new A() )->withName( null );
+		$this->assertNull( $a->name );
+	}
 
 }
 
