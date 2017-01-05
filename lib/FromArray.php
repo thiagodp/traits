@@ -9,9 +9,10 @@ namespace phputil\traits;
 trait FromArray {
 	
 	/**
-	 * Copy values from an array, not recursively.
+	 * Copy values from an array, *not* recursively.
 	 *
 	 * @param array $map	Map of values.
+	 * @return object		Return $this;
 	 */
 	function fromArray( array $map ) {
 		$vars = get_object_vars( $this ); // all but static ones
@@ -20,6 +21,7 @@ trait FromArray {
 				$this->{ $attr } = $value;
 			}
 		}
+		return $this;
 	}	
 	
 }

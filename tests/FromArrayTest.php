@@ -39,6 +39,12 @@ class FromArrayTest extends PHPUnit_Framework_TestCase {
 		
 		$this->assertEquals( $map, $r );
 	}
+	
+	function test_return_a_reference_to_this() {
+		$d = new DummyB();
+		$x = $d->fromArray( array() );
+		$this->assertEquals( $d, $x );
+	}
 
 }
 
