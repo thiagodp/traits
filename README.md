@@ -21,7 +21,7 @@ composer require phputil/traits
 
 ## Examples
 
-Example on GetterBuilder:
+Example on `GetterBuilder`:
 
 ```php
 class MyClass {
@@ -42,7 +42,7 @@ echo $obj->getName(); // Bob
 echo $obj->getDescription(); // I am Bob
 ```
 
-Example on WithBuilder:
+Example on `WithBuilder`:
 
 ```php
 class MyClass {
@@ -58,7 +58,7 @@ echo $obj->name; // Bob
 echo $obj->description; // I am Bob
 ```
 
-Example on GetterSetterWithBuilder:
+Example on `GetterSetterWithBuilder`:
 
 ```php
 class MyClass {
@@ -76,7 +76,7 @@ $obj->setName( 'Bob Dylan' );
 echo $obj->getName(); // Bob Dylan
 ```
 
-Example on FromArray:
+Example on `FromArray`:
 
 ```php
 class MyClass {
@@ -93,7 +93,20 @@ $obj->fromArray( array( 'id' => 10, 'name' => 'Bob', 'age' => 18 ) );
 var_dump( $obj ); // the attributes will have the array values
 ```
 
-Example on ToArray:
+Example on converting from a dynamic object:
+
+```php
+// From a converting from a dynamic object, just use a type casting
+$p = new \stdClass;
+$p->id = 10;
+$p->name = 'Bob';
+$p->age = 18;
+
+$obj = new MyClass();
+$obj->fromArray( (array) $p ); // Just make a type casting to array ;)
+```
+
+Example on `ToArray`:
 
 ```php
 class MyClass {
