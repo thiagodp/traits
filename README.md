@@ -24,6 +24,8 @@ composer require phputil/traits
 Example on `GetterBuilder`:
 
 ```php
+use phputil\traits\GetterBuilder;
+
 class MyClass {
 
 	use GetterBuilder; // simulate getters
@@ -45,6 +47,8 @@ echo $obj->getDescription(); // I am Bob
 Example on `WithBuilder`:
 
 ```php
+use phputil\traits\WithBuilder;
+
 class MyClass {
 
 	use WithBuilder;
@@ -61,6 +65,8 @@ echo $obj->description; // I am Bob
 Example on `GetterSetterWithBuilder`:
 
 ```php
+use phputil\traits\GetterSetterWithBuilder;
+
 class MyClass {
 
 	use GetterSetterWithBuilder;
@@ -79,6 +85,8 @@ echo $obj->getName(); // Bob Dylan
 Example on `FromArray`:
 
 ```php
+use phputil\traits\FromArray;
+
 class MyClass {
 
 	use FromArray;
@@ -109,6 +117,8 @@ $obj->fromArray( (array) $p ); // Just make a type casting to array ;)
 Example on `ToArray`:
 
 ```php
+use phputil\traits\ToArray;
+
 class MyClass {
 
 	use ToArray;
